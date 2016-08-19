@@ -39,17 +39,17 @@ public class ShareDialog extends Dialog implements View.OnClickListener {
         shareListener = new UMShareListener() {
             @Override
             public void onResult(SHARE_MEDIA platform) {
-                Toast.makeText(mActivity, platform + " 分享成功啦", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mActivity, platform + " 分享成功啦", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onError(SHARE_MEDIA platform, Throwable t) {
-                Toast.makeText(mActivity, platform + " 分享失败啦", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mActivity, platform + " 分享失败啦", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onCancel(SHARE_MEDIA platform) {
-                Toast.makeText(mActivity, platform + " 分享取消了", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mActivity, platform + " 分享取消了", Toast.LENGTH_SHORT).show();
             }
         };
     }
@@ -57,7 +57,7 @@ public class ShareDialog extends Dialog implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dialog_share);
+        setContentView(R.layout.dialog_share_nice);
         findViewById(R.id.layout_share_wechat).setOnClickListener(this);
         findViewById(R.id.layout_share_friend).setOnClickListener(this);
         findViewById(R.id.layout_share_qq).setOnClickListener(this);

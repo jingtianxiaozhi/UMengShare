@@ -128,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/friend_selector" />
+                    android:src="@drawable/qzone_selector" />
 
                 <TextView
                     android:layout_width="wrap_content"
